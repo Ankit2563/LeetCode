@@ -43,5 +43,8 @@
         int n;
         cin >>n;
 
-        cout << getRow(n) << endl;
+        vector<int> v = getRow(n);
+        for (int i = 0; i < v.size();i++){
+            cout << v[i] << " ";
+        }
     }
