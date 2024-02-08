@@ -17,7 +17,7 @@ long long solve(int index, int n, vector<int> &arr, int k, vector<int> &dp)
 
         ans = max(ans, count * maxi + solve(i + 1, n, arr, k, dp));
     }
-    return dp[index] = ans;
+    return dp[index] = (int)ans;
 }
 int maxSumAfterPartitioning(vector<int> &arr, int k)
 {
